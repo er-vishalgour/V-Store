@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products-VStore | Online Products Store</title>
+    <link rel="stylesheet" href="style_contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.htm"><img src="images/logo_final.png" alt="" width="150px"></a>
+            </div>
+            <nav>
+                <ul id="menuItems">
+                    <li><a href="index.htm">Home</a></li>
+                    <li><a href="products.htm">Products</a></li>
+                    <li><a href="about.htm">About</a></li>
+                    <li><a href="contact.htm">Contact</a></li>
+                    <li><a href="account.htm">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.htm"><img src="images/cart.png" width="40px" height="43px" class="cart"></a>
+            <span class="cart-span">0</span>
+            <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
+        </div>
+    </div>
+    
+    <!-- Contact Us  -->
+    <div class="contact-page">
+        <div class="container-contact">
+            <header class="header-contact">
+            <h1>Connect with us</h1>
+            <p>We would love to respond to your queries. Feel free to get in touch with us</p>
+            </header>
+            <div class="content">
+                <div class="content-form">
+                    <section>
+                        <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                        <h2>Address</h2>
+                        <p>
+                            Assam University, Silchar <br>
+                            Cachar, Assam. <br>
+                            788160
+                        </p>
+                    </section>
+    
+                    <section>
+                        <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                        <h2>Phone</h2>
+                        <p>123-456-78901548</p>
+                    </section>
+    
+                    <section>
+                        <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                        <h2>E-mail</h2>
+                        <p>email@temporary.net</p>
+                    </section>
+                </div>
+            </div>
+            <form>
+                <div class="form">
+                    <div class="right">
+                      <div class="contact-form">
+                          <input type="text" required>
+                          <span>Full Name</span>
+                      </div>
+          
+                      <div class="contact-form">
+                          <input type="E-mail" required>
+                          <span>E-mail Id</span>
+                      </div>
+                      <div class="contact-form">
+                          <textarea name="text">
+                            
+                          </textarea>
+                          <span> Type your Message....</span>
+                      </div>
+          
+                      <div class="contact-form">
+                          <input type="submit" name="submit">
+                      </div>
+                      </div>
+                    </div>
+            </form>
+            <div class="media">
+                <li><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></li>
+                <li><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
+                <li><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></li>
+            </div>
+        
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download our app for Android and iOS mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo_final.png">
+                    <p>Our purpose is to sustainably make the pleasure and benefits Of products accessible to the
+                        many
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright© 2020--VStore</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="cart.js"></script>
+    <script>
+        let Loginform = document.getElementById("LoginForm")
+        let RegForm = document.getElementById("RegForm")
+        let Indicator = document.getElementById("indicator")
+
+        function register(){
+            RegForm.style.transform = "translateX(0px)"
+            LoginForm.style.transform = "translateX(0px)"
+            Indicator.style.transform = "translateX(100px)"
+        }
+        function login(){
+            RegForm.style.transform = "translateX(300px)"
+            LoginForm.style.transform = "translateX(300px)"
+            Indicator.style.transform = "translateX(0px)"
+        }
+
+    </script>
+</body>
+
+
+</html>
