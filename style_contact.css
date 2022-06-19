@@ -369,7 +369,7 @@ select:focus{
 
 /* contact page */
 .contact-page{
-    padding: 100px 0;
+    padding: 120px 0;
     background: radial-gradient(#fff,#d37f94);
 }
 
@@ -499,7 +499,7 @@ section i{
         height: 210vh;
     }
     .form{
-        position: absolute;
+        position: inherit;
         top: 100vh;
         margin-left: 10%;
     }
