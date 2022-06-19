@@ -415,7 +415,7 @@ section i{
 .form{
     display: flex;
     position: absolute;
-    top: 5%;
+    top: 10%;
     left: 0;
     margin-left: 50%;
     justify-content: center;
@@ -477,7 +477,7 @@ section i{
 .media{
     position: absolute;
     top: 85vh;
-    right: 53vh;
+    right: 48vh;
     display: flex;
     list-style: none;
 }
